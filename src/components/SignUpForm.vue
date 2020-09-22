@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <form @submit="checkForm" action="#" method="post">
-            <InputLabel class="input" :fields="fields"/>
+            <Input class="input" :fields="fields"/>
             <p v-show="isHintVisible" class="hint-text">{{ hintText }}
             </p>
             <button type="button" class="hint"
@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import InputLabel from '@/components/InputLabel.vue';
-import ButtonRectangle from '@/components/ButtonRectangle.vue';
+import Input from './Input.vue';
+import ButtonRectangle from './ButtonRectangle.vue';
 
 export default {
   data() {
@@ -66,13 +66,13 @@ export default {
       isPasswordVisible: false,
       isEmailValid: true,
       hintText: 'Password must contain 8+ symbols, 1 special and 2 capital letters',
-      savedUser: [
-        localStorage.setItem('userName', this.fields[0].vModel),
-      ],
+      // savedUser: {
+      //  userName: localStorage.setItem('userName', this.fields[0].vModel),
+      // },
     };
   },
   components: {
-    InputLabel, ButtonRectangle,
+    Input, ButtonRectangle,
   },
   methods: {
     checkForm() {

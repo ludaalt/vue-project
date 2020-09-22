@@ -1,14 +1,14 @@
 <template>
 <div class="container">
     <form>
-            <InputLabel :fields="fields"/>
+            <Input :fields="fields"/>
             <ButtonRectangle class="blue-button" :msg="msg"/>
     </form>
 </div>
 </template>
 
 <script>
-import InputLabel from '@/components/InputLabel.vue';
+import Input from '@/components/Input.vue';
 import ButtonRectangle from '@/components/ButtonRectangle.vue';
 
 export default {
@@ -31,7 +31,7 @@ export default {
   },
 
   components: {
-    InputLabel, ButtonRectangle,
+    Input, ButtonRectangle,
   },
 };
 </script>
