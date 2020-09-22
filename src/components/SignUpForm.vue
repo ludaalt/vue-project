@@ -67,7 +67,7 @@ export default {
       isEmailValid: true,
       hintText: 'Password must contain 8+ symbols, 1 special and 2 capital letters',
       // savedUser: {
-      //  userName: localStorage.setItem('userName', this.fields[0].vModel),
+      //   userName: localStorage.setItem('userName', this.fields[0].vModel),
       // },
     };
   },
